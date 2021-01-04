@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">MultiSelectToDelete</string>
+    <string name="delete_item">Delete</string>
+</resources>
