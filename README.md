@@ -12,4 +12,4 @@ To make this app work, follow the instructions given in the official documentati
 
 This repo is the source code of the this article: [How to delete multiple records from Firestore using RecyclerView multi-selection?](https://medium.com/firebase-tips-tricks/how-to-delete-multiple-records-from-firestore-using-recyclerview-multi-selection-96108e4c6166)
 
-See it on youtube: Coming soon.
+See it on youtube: https://www.youtube.com/watch?v=55KrkUJrwOo
