@@ -2,6 +2,7 @@ package ro.alexmamo.multiselecttodelete.products
 
 import android.view.LayoutInflater
 import android.view.View
+import android.view.View.*
 import android.view.ViewGroup
 import androidx.core.content.ContextCompat.getColor
 import androidx.databinding.DataBindingUtil
@@ -58,13 +59,13 @@ class ProductsAdapter(
         private fun selectView(rootView: View) {
             val color = getColor(rootView.context, R.color.colorProductSelected)
             rootView.product_container.setBackgroundColor(color)
-            rootView.selected_image_view.visibility = View.VISIBLE
+            rootView.selected_image_view.visibility = VISIBLE
         }
 
         private fun deselectView(rootView: View) {
             val color = getColor(rootView.context, R.color.colorWhite)
             rootView.product_container.setBackgroundColor(color)
-            rootView.selected_image_view.visibility = View.INVISIBLE
+            rootView.selected_image_view.visibility = INVISIBLE
         }
     }
 }
