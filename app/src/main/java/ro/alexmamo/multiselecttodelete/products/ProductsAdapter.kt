@@ -2,16 +2,17 @@ package ro.alexmamo.multiselecttodelete.products
 
 import android.view.LayoutInflater
 import android.view.View
-import android.view.View.*
+import android.view.View.INVISIBLE
+import android.view.View.VISIBLE
 import android.view.ViewGroup
 import androidx.core.content.ContextCompat.getColor
-import androidx.databinding.DataBindingUtil
 import androidx.databinding.ViewDataBinding
 import androidx.recyclerview.widget.RecyclerView
 import kotlinx.android.synthetic.main.item_product.view.*
 import ro.alexmamo.multiselecttodelete.BR
 import ro.alexmamo.multiselecttodelete.R
 import ro.alexmamo.multiselecttodelete.data.Product
+import ro.alexmamo.multiselecttodelete.databinding.ProductDataBinding
 import ro.alexmamo.multiselecttodelete.products.ProductsAdapter.ProductViewHolder
 import ro.alexmamo.multiselecttodelete.utils.ClickHandler
 import ro.alexmamo.multiselecttodelete.utils.OnEventListener
@@ -22,10 +23,8 @@ class ProductsAdapter(
 ): RecyclerView.Adapter<ProductViewHolder>() {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ProductViewHolder {
         val layoutInflater = LayoutInflater.from(parent.context)
-        val itemProduct = R.layout.item_product
-        val dataBinding = DataBindingUtil.inflate<ViewDataBinding>(
+        val dataBinding = ProductDataBinding.inflate(
             layoutInflater,
-            itemProduct,
             parent,
             false
         )
